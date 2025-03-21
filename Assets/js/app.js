@@ -1,6 +1,4 @@
 
-
-
 let input = document.querySelector('.js-input'); 
 const button = document.querySelector('.js-button'); 
 const result = document.querySelector('.js-result'); 
@@ -35,5 +33,8 @@ button.addEventListener('click', async () => {
         result.innerHTML = '<p>Si è verificato un errore. Riprova più tardi.</p>';
     }
 });
+
+
+
 
 
