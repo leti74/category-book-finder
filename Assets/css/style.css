@@ -3,107 +3,138 @@
   margin: 0;
   padding: 0;}
 
-  h1 {
-    color: #423040;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
+
+  header h1 {
     text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
   }
 
-
-
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
   .sfondo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://media.istockphoto.com/id/1485326908/it/foto/libri-islamici-su-uno-scaffale.jpg?s=1024x1024&w=is&k=20&c=ZZcmGzGvhhuSmTt2S1TO9fYbnlYiygXMp_X-cxPohgc=') no-repeat center center fixed; 
+  background: url('https://images.unsplash.com/photo-1505663912202-ac22d4cb3707?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDk2fHx8ZW58MHx8fHx8'); 
+  filter: blur(4px);
   background-size: cover;
-  filter: blur(7px); 
+  opacity: 30%;
   z-index: -1;}
 
+  
   .contenuto {
     position: relative;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.6);
-    border: 3px solid #423040;;
+    background-color:rgba(73, 58, 86, 0.753);
     border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
-    padding: 40px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-    animation: fadeIn 1,5s ease-in-out;
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    gap: 25px;
+    margin-top: 30px;
+    width: 90%; 
+    flex-direction: row; 
+     
+    
   }  
 
+ 
   body {
-    background-color: black;
+    background-color: rgb(32, 24, 39);
+    font-family: 'Poppins', sans-serif;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    width: 100%;
     margin: 0;
-    overflow: hidden;
+    color: white;
   }
 
   input[type='text']{
-    font-family: 'Quicksand', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   background-color: rgba(0, 0, 0, 0);
+   border: 2px solid white;
+   color: white;
    width: 85%;
-   padding: 10px;
+   padding: 0 15px;
    font-size: 18px;
-   border: 2px solid  #8d778a;
    border-radius: 30px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   padding: 5px 25px;
+  
    outline: none;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
+  input::placeholder {
+    color:rgba(255, 255, 255, 0.686);
+  }
+
+
   input[type="text"]:hover {
-    border-color:#5a526d;
-    box-shadow: 0 6px 20px rgba(154, 140, 152, 0.3); 
-    transform: scale(1.03);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.319);
+    border: none;
+    background-color: rgba(200, 153, 243, 0.542);
+ }
+
+ input[type="text"]:focus {
+  background-color: rgba(200, 153, 243, 0.542);
+  border: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.319);
  }
 
 
-  input[type="text"]:focus{
-    border-color: #4a4e69;
-    box-shadow: 0 6px 20px rgba(74, 78, 105, 0.4);
-    transform: scale(1.05);
- }
-
-  button{
+  .button1 {
     font-family: 'Poppins', sans-serif;
-    margin-top: 26px;
     padding: 10px 25px;
     font-size: 15px;
-    background: linear-gradient(135deg, #8d778a, #080a16);
-    color: white;
+    background-color: rgb(150, 116, 182);
+    color:white;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    
   }
 
   button:hover {
-    background:  #423040;
+    background-color: rgb(199, 153, 243);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.319);
   }
 
   button:active {
     transform: translateY(2px);
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.178);
   }
 
 
 
+@media only screen and (min-width: 961px) {
 
+  input[type="text"] {
+    padding: 0 15px;
+  }
 
+  .contenuto {
+    width: 50%;
     
+  }
+
+  .layout{
+    align-items: center;
+  }
+}
+
+
+
 
