@@ -4,44 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="Owly libreria">
+    <meta property="og:type" content="libreria online">
+    <meta property="og:image" content="Assets/img/Screenshot.png">
+
+    <title>Owly</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap"
         rel="stylesheet">
 
-
+    <link rel="icon" href="Assets/icon/icons8-libri-60.png">
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/risultati-ricerca.css">
 </head>
 
 <body>
 
-    <div class="layout">
+    <div class="sfondo"></div>
 
-        <div class="sfondo"></div>
+    <header>
+        <h1>Cerca Categoria</h1>
+    </header>
+
+    <main>
+        <section class="contenuto">
+
+            <input type="text" name="nome" placeholder="inserisci categoria " class="js-input">
+
+            <button class="button1 js-button"> invia</button>
+        </section>
 
 
-        <div class="contenuto">
-            <img src="Assets/icon/icons8-libri-48.png" alt="icona-libro">
-
-            <input type="text" name="nome" placeholder="Inserisci categoria (es. fantasy)" class="js-input" v>
-
-            <button class="js-button"> invia</button>
-        </div>
-
-
-        <div class="js-result result"></div>
+        <section class="js-result result"></section>
 
         <!--  <div class= result-item> 
 
 
         </div> -->
 
-    </div>
 
 
-
+    </main>
 
 
     <script src="Assets/js/app.js"></script>

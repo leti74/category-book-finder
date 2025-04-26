@@ -1,45 +1,110 @@
 
 .result {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px; 
-    margin: 20px 20px;
-    
-
-    
-    
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+   margin: 20px 20px;  
 }
 
 .result-item {
-    background: #f9f9f9; 
-    border: 1px solid #ddd; 
+    min-height: 10px;
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    padding: 15px;
-    transition: transform 0.2s, box-shadow 0.2s; 
-    
-}
-.result-item:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;   
 }
 
-.result-item a {
-    font-size: 14px;
-    width: 100%;
-    margin: 0 0 10px; 
+.info-book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.info-book h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: rgb(199, 153, 243);
+    }
+
+.info-book p{
+    max-width: 30%;
+    text-align: end;
+    font-size: 11px;
+   
+    
+}
+.info-book h2:hover {
+    color: rgb(241, 233, 249);
+}
+
+
+.result-item {
+    min-height: 150px;
+    background-color: rgba(73, 73, 73, 0.663);
+    border:  solid rgb(199, 153, 243);;
+    border-radius: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;   
+}
+
+.result-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(85, 82, 82, 0.15); 
+    background: rgba(116, 99, 132, 0.67);
 }
 
 .result-item p {
-    color: #666; 
+    color: #ffffff; 
     font-size: 14px;
     margin: 0;
 }
- .layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    
- }
 
+.js-description {
+    margin-top: 5px;
+    padding: 15px 25px;
+ 
+     }
+
+   
+
+@media only screen and (min-width: 961px) {
+   
+
+    .result-item {
+        min-height: 40px;
+        padding: 35px;
+        
+          
+    }
+    
+    .info-book {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    
+    }
+
+   
+    .info-book h2 {
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: rgb(199, 153, 243);
+    }
+
+   
+    .js-description {
+   margin-top: 20px;
+   padding: 15px 25px;
+
+    }
+   
+}
