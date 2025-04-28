@@ -62,7 +62,7 @@ button.addEventListener("click", async () => {
   let categoria = input.value.trim();
   result.innerHTML = "";
 
-  if (!categoria || categoria === undefined) {
+  if (!categoria) {
     result.innerHTML = "<p>Inserisci una categoria valida.</p>";
     return;
   }
