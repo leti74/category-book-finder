@@ -59,6 +59,7 @@
 
   input[type='text']{
    font-family: 'Quicksand', sans-serif;
+   text-transform: lowercase;
    background-color: rgba(0, 0, 0, 0);
    border: 2px solid white;
    color: white;
