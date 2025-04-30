@@ -26,19 +26,31 @@
 
 <body>
 
-    <div class="sfondo"></div>
+    <div class="wallpaper"></div>
 
     <header>
+
         <h1>Cerca Categoria</h1>
+
+
     </header>
 
     <main>
-        <section class="contenuto">
+        <section class="content">
 
             <input type="text" name="nome" placeholder="inserisci categoria " class="js-input">
 
             <button class="button1 js-button"> invia</button>
         </section>
+        <div class="suggestions">
+            <p>Popolari:</p>
+            <div class="button-cat">
+                <button class="suggestion" data-category="fantasy">Fantasia</button>
+                <button class="suggestion" data-category="mystery">Mistero</button>
+                <button class="suggestion" data-category="history">Storia</button>
+                <button class="suggestion" data-category="horror">Orrore</button>
+            </div>
+        </div>
 
 
         <section class="js-result result"></section>

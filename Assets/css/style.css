@@ -6,9 +6,43 @@
 
   header h1 {
     text-align: center;
-    margin-top: 50px;
-    font-size: 40px;
+    margin-top: 80px;
+    font-size: 30px;
     font-weight: 500;
+  }
+
+  .suggestions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+ 
+
+  .button-cat {
+    display: flex;
+    gap: 10px;
+    
+
+  }
+
+  .button-cat button {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgba(73, 58, 86, 0);
+    color:rgb(176, 174, 174);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+    
+
   }
 
   main {
@@ -17,7 +51,7 @@
     justify-content: center;
  }
  
-  .sfondo {
+  .wallpaper {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,17 +64,18 @@
   z-index: -1;}
 
   
-  .contenuto {
+  .content {
     position: relative;
     z-index: 1;
     background-color:rgba(73, 58, 86, 0.753);
     border-radius: 20px;
-    padding: 30px;
-    width: 60%;
+    padding: 20px;
+    width: 50%;
     display: flex;
     align-self: center;
     gap: 25px;
     margin-top: 30px;
+    margin-bottom: 15px;
     width: 90%; 
     flex-direction: row; 
      
@@ -50,11 +85,12 @@
  
   body {
     background-color: rgb(32, 24, 39);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, Arial;
     background-size: cover;
     width: 100%;
     margin: 0;
     color: white;
+   
   }
 
   input[type='text']{
@@ -62,10 +98,10 @@
    text-transform: lowercase;
    background-color: rgba(0, 0, 0, 0);
    border: 2px solid white;
-   color: white;
+   color: rgb(176, 174, 174);
    width: 85%;
    padding: 0 15px;
-   font-size: 18px;
+   font-size: 15px;
    border-radius: 30px;
    width: 100%;
    padding: 5px 25px;
@@ -96,7 +132,7 @@
   .button1 {
     font-family: 'Poppins', sans-serif;
     padding: 10px 25px;
-    font-size: 15px;
+    font-size: 13px;
     background-color: rgb(150, 116, 182);
     color:white;
     border: none;
@@ -126,14 +162,48 @@
     padding: 0 15px;
   }
 
-  .contenuto {
-    width: 50%;
+  header h1 {
+    margin-top: 50px;
+    font-size: 40px;
     
+  }
+
+  .button-cat button {
+    font-size: 15px;
+
+  }
+  .content {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .suggestions{
+    width: 50%;
+    align-self: center;
+    justify-content: start;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: start;
+    font-size: 13px;
+  }
+
+  .button-cat button {
+    font-size: 12px;
   }
 
   .layout{
     align-items: center;
   }
+
+  input[type='text']{
+    font-size: 18px;
+   }
+
+   .button1 {
+    font-size: 15px;
+  }
+ 
 }
 
 
