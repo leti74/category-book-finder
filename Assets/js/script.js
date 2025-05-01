@@ -47,6 +47,8 @@ class Libro {
         resultDescription.classList.add("js-description");
         resultDescription.innerHTML = `<p>${this.descriptionBook}</p>`;
         resultItem.appendChild(resultDescription);
+      } else {
+        resultDescription.innerHTML = "";
       }
     });
 

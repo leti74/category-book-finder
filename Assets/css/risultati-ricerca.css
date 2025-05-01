@@ -43,7 +43,7 @@
 
 
 .result-item {
-    min-height: 150px;
+    min-height: 10px;
     background-color: rgba(73, 73, 73, 0.663);
     border:  solid rgb(199, 153, 243);;
     border-radius: 20px; 
