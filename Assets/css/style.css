@@ -6,30 +6,30 @@
 
   header h1 {
     text-align: center;
-    margin-top: 80px;
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
+
 
   .suggestions{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left:30px ;
-    margin-right: 30px ;
+    flex-direction: column;
+    gap: 10px;
     text-align: start;
     font-size: 12px;
+    
   }
 
+  
  
 
   .button-cat {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     
 
   }
@@ -43,7 +43,7 @@
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    font-size: 12px;
+    font-size: 10px;
     
 
   }
@@ -52,6 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
  }
  
   .wallpaper {
@@ -72,16 +73,14 @@
     z-index: 1;
     background-color:rgba(73, 58, 86, 0.753);
     border-radius: 20px;
-    padding: 20px 15px;
+    padding: 15px 10px;
     display: flex;
     align-self: center;
-    gap: 25px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-   margin-left: 15px ;
-   margin-right: 15px; 
+    gap: 10px;
     flex-direction: row; 
-     
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     
   }  
 
@@ -97,7 +96,7 @@
     align-items: center; 
     justify-content: center; 
     min-height: 100vh; 
-    margin: 0;
+    
 }
    
   
@@ -108,20 +107,19 @@
    background-color: rgba(0, 0, 0, 0);
    border: 2px solid white;
    color: rgb(176, 174, 174);
-   width: 85%;
    padding: 0 15px;
    font-size: 15px;
    border-radius: 30px;
    width: 100%;
    padding: 5px 25px;
-  
    outline: none;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   input::placeholder {
     color:rgba(255, 255, 255, 0.686);
-    font-size: 13px;
+    font-size: 11px;
+    
     
   }
 
@@ -167,7 +165,9 @@
 
 
 
-@media only screen and (min-width: 961px) {
+
+
+@media only screen and (min-width: 900px)  {
 
   input[type="text"] {
     padding: 0 15px;
@@ -175,34 +175,36 @@
   }
 
   header h1 {
-    margin-top: 50px;
     font-size: 40px;
+    
     
   }
 
   .button-cat button {
     font-size: 15px;
-
   }
+
   .content {
     width: 80%;
     padding: 22px;
     width: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 40%;
   }
 
   input::placeholder {
     color:rgba(255, 255, 255, 0.686);
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .suggestions{
-    width: 60%;
+    width: 50%;
     align-self: center;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
     text-align: start;
     font-size: 13px;
+    flex-direction: row;
   }
 
   .button-cat button {
@@ -220,6 +222,11 @@
    .button1 {
     font-size: 15px;
   }
+
+  main {
+    
+    width: 97%;
+ }
  
 }
 

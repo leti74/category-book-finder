@@ -6,14 +6,6 @@
    margin: 30px 30px;  
 }
 
-.result-item {
-    min-height: 10px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;   
-}
-
 .info-book {
     display: flex;
     align-items: center;
@@ -31,7 +23,7 @@
     }
 
 .info-book p{
-    max-width: 30%;
+    max-width: 40%;
     text-align: end;
     font-size: 10px;
    
@@ -43,13 +35,17 @@
 
 
 .result-item {
-    min-height: 10px;
+    min-height: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    
     background-color: rgba(73, 73, 73, 0.663);
     border:  solid rgb(199, 153, 243);;
     border-radius: 20px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;   
+     
 }
 
 .result-item:hover {
@@ -60,8 +56,8 @@
 
 .result-item p {
     color: #ffffff; 
-    font-size: 14px;
-    margin: 0;
+    font-size: 12px;
+    
 }
 
 .js-description {
@@ -77,9 +73,8 @@
 
     .result-item {
         min-height: 40px;
-        padding: 35px;
-        
-          
+        width: 100%;
+        width: auto;    
     }
     
     .info-book {
@@ -92,7 +87,6 @@
    
     .info-book h2 {
     font-family: 'Poppins', sans-serif;
-    
     font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
@@ -100,11 +94,11 @@
     color: rgb(199, 153, 243);
     }
 
-   
     .js-description {
-   margin-top: 20px;
-   padding: 15px 25px;
-
-    }
+        margin-top: 5px;
+        padding: 15px 25px;
+        
+         }
+  
    
 }
