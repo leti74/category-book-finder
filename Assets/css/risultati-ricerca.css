@@ -63,7 +63,9 @@
 .js-description {
     margin-top: 5px;
     padding: 15px 25px;
- 
+    height: auto;
+    overflow-wrap: break-word;
+    
      }
 
    
@@ -73,7 +75,6 @@
 
     .result-item {
         min-height: 40px;
-        width: 100%;
         width: auto;    
     }
     

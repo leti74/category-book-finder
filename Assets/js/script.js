@@ -14,7 +14,10 @@ class Libro {
   async fetchDescription() {
     try {
       let response = await fetch(
-        `https://openlibrary.org${this.keyBooks}.json`
+        `https://openlibrary.org${this.keyBooks}.json`,
+        {
+          method: "GET",
+        }
       );
       let data = await response.json();
       this.descriptionBook = data.description
