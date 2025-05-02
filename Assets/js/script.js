@@ -71,7 +71,7 @@ document.querySelectorAll(".suggestion").forEach((button) => {
 });
 
 button.addEventListener("click", async () => {
-  let categoria = input.value.trim();
+  let categoria = input.value.toLowerCase();
   result.innerHTML = "";
 
   if (!categoria) {
