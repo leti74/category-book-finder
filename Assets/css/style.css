@@ -13,41 +13,6 @@
   }
 
 
-  .suggestions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    text-align: start;
-    font-size: 12px;
-    
-  }
-
-  
- 
-
-  .button-cat {
-    display: flex;
-    gap: 8px;
-    
-
-  }
-
-  .button-cat button {
-    padding: 10px;
-    font-family: 'Quicksand', sans-serif;
-    background-color:rgba(73, 58, 86, 0);
-    color:rgb(176, 174, 174);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-size: 10px;
-    
-
-  }
-
   main {
     display: flex;
     flex-direction: column;
@@ -95,7 +60,7 @@
     align-items: center; 
     justify-content: center; 
     min-height: 100vh; 
-    
+    margin-top: 25px;
     
     
 }
@@ -104,22 +69,23 @@
 
   input[type='text']{
    font-family: 'Quicksand', sans-serif;
+   text-transform: lowercase;
    background-color: rgba(0, 0, 0, 0);
    border: 2px solid white;
    color: rgb(176, 174, 174);
-   padding: 0 15px;
    font-size: 15px;
+   padding: 0 14px;
    border-radius: 30px;
    width: 100%;
-
-   padding: 5px 25px;
+   
    outline: none;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
   }
 
   input::placeholder {
     color:rgba(255, 255, 255, 0.686);
-    font-size: 14px;
+    font-size: 12px;
     
     
   }
@@ -165,7 +131,7 @@
   }
 
 
-@media only screen and (min-width:401px) and (max-width:960px) {
+@media only screen and (min-width:401px) and (max-width:800px) {
 
   main {
     width: 90%;
@@ -178,7 +144,7 @@
 } 
 
 
-@media only screen and (min-width: 961px)  {
+@media only screen and (min-width: 801px)  {
 
   input[type="text"] {
     padding: 0 15px;
@@ -207,19 +173,6 @@
   input::placeholder {
     color:rgba(255, 255, 255, 0.686);
     font-size: 18px;
-  }
-
-  .suggestions{
-    width: 50%;
-    align-self: center;
-    justify-content: center;
-    text-align: start;
-    font-size: 13px;
-    flex-direction: row;
-  }
-
-  .button-cat button {
-    font-size: 12px;
   }
 
   .layout{

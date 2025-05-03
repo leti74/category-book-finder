@@ -63,13 +63,6 @@ const input = document.querySelector(".js-input");
 const button = document.querySelector(".js-button");
 const result = document.querySelector(".js-result");
 
-document.querySelectorAll(".suggestion").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelector(".js-input").value = button.dataset.category;
-    document.querySelector(".js-button").click();
-  });
-});
-
 button.addEventListener("click", async () => {
   let categoria = input.value.toLowerCase();
   result.innerHTML = "";
