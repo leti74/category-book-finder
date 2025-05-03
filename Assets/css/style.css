@@ -44,7 +44,7 @@
     gap: 10px;
     flex-direction: row; 
     margin-bottom: 30px;
-    width: 83%;
+    width: 68%;
     
   }  
 
@@ -131,20 +131,10 @@
   }
 
 
-@media only screen and (min-width:401px) and (max-width:800px) {
-
-  main {
-    width: 90%;
- }
-
- .content {
-  
-  width: 65%;
-}
-} 
 
 
-@media only screen and (min-width: 801px)  {
+
+@media only screen and (min-width: 820px)  {
 
   input[type="text"] {
     padding: 0 15px;
@@ -162,12 +152,12 @@
   }
 
   .content {
-    width: 80%;
+   
     padding: 22px;
     width: 50%;
     margin-right: 0px;
     margin-left: 0px;
-    width: 45%;
+    
   }
 
   input::placeholder {
@@ -189,7 +179,7 @@
 
   main {
     
-    width: 97%;
+    width: 85%;
  }
  
 }
