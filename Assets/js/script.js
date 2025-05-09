@@ -78,13 +78,17 @@ button.addEventListener("click", async () => {
     );
     let data = await response.json();
 
-    data.works.forEach((work) => {
-      let libro = new Libro(work.title, work.key, [
-        ...new Set(work.authors.map((author) => author.name)),
-      ]);
+    if (data.works.length === 0) {
+      result.innerHTML = "<p>Categoria non trovata.</p>";
+    } else {
+      data.works.forEach((work) => {
+        let libro = new Libro(work.title, work.key, [
+          ...new Set(work.authors.map((author) => author.name)),
+        ]);
 
-      result.appendChild(libro.render());
-    });
+        result.appendChild(libro.render());
+      });
+    }
   } catch (error) {
     console.error("Errore:", error);
     result.innerHTML = "<p>Si è verificato un errore.</p>";
