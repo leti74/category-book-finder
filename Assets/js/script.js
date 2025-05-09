@@ -79,11 +79,9 @@ button.addEventListener("click", async () => {
     let data = await response.json();
 
     data.works.forEach((work) => {
-      let libro = new Libro(
-        work.title,
-        work.key,
-        work.authors.map((author) => author.name).join(", ")
-      );
+      let libro = new Libro(work.title, work.key, [
+        ...new Set(work.authors.map((author) => author.name)),
+      ]);
 
       result.appendChild(libro.render());
     });
