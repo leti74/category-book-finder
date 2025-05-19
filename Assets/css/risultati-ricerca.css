@@ -10,13 +10,21 @@
 .hidden {
     display: none;
   }
-  
+
+.loading {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+
 .info-book {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 10px;
 }
+
 .info-book h2 {
     font-family: 'Poppins', sans-serif;
     padding: 10px;
@@ -25,7 +33,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     color: rgb(199, 153, 243);
-    }
+}
 
 .info-book p{
     max-width: 40%;

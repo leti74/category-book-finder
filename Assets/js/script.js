@@ -44,6 +44,7 @@ class Libro {
     let titleBook = resultItem.querySelector(".js-title");
     titleBook.addEventListener("click", async () => {
       await this.fetchDescription();
+
       let resultDescription = resultItem.querySelector(".js-description");
       if (!resultDescription) {
         resultDescription = document.createElement("div");
@@ -63,14 +64,30 @@ const input = document.querySelector(".js-input");
 const button = document.querySelector(".js-button");
 const result = document.querySelector(".js-result");
 
+const loader = document.createElement("div");
+loader.classList.add("loading");
+loader.innerText = "Loading...";
+loader.style.display = "none";
+document.body.appendChild(loader);
+
+function showLoader() {
+  loader.style.display = "block";
+}
+
+function hideLoader() {
+  loader.style.display = "none";
+}
+
 button.addEventListener("click", async () => {
   let categoria = input.value.toLowerCase();
   result.innerHTML = "";
 
   if (!categoria) {
-    result.innerHTML = "<p>Inserisci una categoria valida.</p>";
+    result.innerHTML = "<p>Please enter a valid category.</p>";
     return;
   }
+
+  showLoader();
 
   try {
     let response = await fetch(
@@ -78,8 +95,10 @@ button.addEventListener("click", async () => {
     );
     let data = await response.json();
 
+    hideLoader();
+
     if (data.works.length === 0) {
-      result.innerHTML = "<p>Categoria non trovata.</p>";
+      result.innerHTML = "<p>Category not found.</p>";
     } else {
       data.works.forEach((work) => {
         let libro = new Libro(work.title, work.key, [
@@ -91,7 +110,7 @@ button.addEventListener("click", async () => {
     }
   } catch (error) {
     console.error("Errore:", error);
-    result.innerHTML = "<p>Si è verificato un errore.</p>";
+    result.innerHTML = "<p>An error occurred.</p>";
   }
 });
 
