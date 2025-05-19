@@ -3,7 +3,7 @@ class Libro {
     title,
     keyBooks,
     authors,
-    descriptionBook = "Descrizione non disponibile"
+    descriptionBook = "Description not available"
   ) {
     this.title = title;
     this.keyBooks = keyBooks;
@@ -24,10 +24,10 @@ class Libro {
         ? typeof data.description === "string"
           ? data.description
           : data.description.value
-        : "Descrizione non disponibile";
+        : "Description not available";
     } catch (error) {
-      console.error("Errore nel recupero della descrizione:", error);
-      this.descriptionBook = "Errore nel recupero della descrizione.";
+      console.error("Error retrieving description:", error);
+      this.descriptionBook = "Error retrieving description";
     }
   }
 
